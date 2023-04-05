@@ -48,6 +48,7 @@ namespace GuitarHero
 
         public void StopRecording()
         {
+            if(!Recording) return;
             onRecordingStopped.Invoke();
             SaveImpacts();
             _audioSource.Stop();
@@ -55,6 +56,7 @@ namespace GuitarHero
 
         public void StartRecording()
         {
+            if(Recording) return;
             onRecordingStarted.Invoke();
             _audioSource.Play();
         }

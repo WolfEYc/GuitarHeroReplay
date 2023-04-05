@@ -1,6 +1,6 @@
 {
   "name": "com.wolfey.guitarheroreplay",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "Guitar Hero Replay",
   "description": "Wolfey's Guitar Hero replay system",
   "unity": "2022.2",
@@ -25,10 +25,10 @@
     "com.unity.visualeffectgraph": "14.0.6"
   },
   "samples": [
-        {
-            "displayName": "Default Guitar",
-            "description": "Contains the Default Guitar assets",
-            "path": "Samples~/DefaultGuitarAssets"
-        }
-    ]
+    {
+      "displayName": "Default Guitar",
+      "description": "Contains the Default Guitar assets",
+      "path": "Samples~/DefaultGuitarAssets"
+    }
+  ]
 }
