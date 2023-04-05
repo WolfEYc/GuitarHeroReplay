@@ -1,0 +1,27 @@
+{
+  "name": "com.wolfey.guitarheroreplay",
+  "version": "1.0.0",
+  "displayName": "Guitar Hero Replay",
+  "description": "Wolfey's Guitar Hero replay system",
+  "unity": "2022.2",
+  "unityRelease": "13f1",
+  "documentationUrl": "",
+  "changelogUrl": "",
+  "licensesUrl": "",
+  "keywords": [
+    "wolfey",
+    "guitar",
+    "hero",
+    "replay"
+  ],
+  "author": {
+    "name": "Wolfey",
+    "email": "wolfeygamedev@gmail.com",
+    "url": "https://www.github.com/WolfEYC"
+  },
+  "dependencies": {
+    "com.wolfey.util": "",
+    "com.unity.inputsystem": "1.5.1",
+    "com.unity.visualeffectgraph": "14.0.6"
+  }
+}
