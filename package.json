@@ -23,5 +23,12 @@
     "com.wolfey.util": "",
     "com.unity.inputsystem": "1.5.1",
     "com.unity.visualeffectgraph": "14.0.6"
-  }
+  },
+  "samples": [
+        {
+            "displayName": "Default Guitar",
+            "description": "Contains the Default Guitar assets",
+            "path": "Samples~/DefaultGuitarAssets"
+        }
+    ]
 }
