@@ -35,14 +35,15 @@ namespace GuitarHero
 
         void RecordToggle()
         {
-            Recording = !Recording;
+            
             if (Recording)
             {
-                StartRecording();
+                StopRecording();
+                
             }
             else
             {
-                StopRecording();
+                StartRecording();
             }
         }
 
@@ -52,6 +53,7 @@ namespace GuitarHero
             onRecordingStopped.Invoke();
             SaveImpacts();
             _audioSource.Stop();
+            Recording = false;
         }
 
         public void StartRecording()
@@ -59,6 +61,7 @@ namespace GuitarHero
             if(Recording) return;
             onRecordingStarted.Invoke();
             _audioSource.Play();
+            Recording = true;
         }
         
         public void SaveImpacts()
