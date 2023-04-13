@@ -9,8 +9,9 @@ namespace GuitarHero
     public class GuitarReplay : ScriptableObject
     {
         public AudioClip song;
+        public Sprite songCover;
+        public string songArtist;
         [SerializeField] GuitarReplayData replayData = new();
-        
         
         string FilePath => Path.Join(Application.persistentDataPath, name);
         

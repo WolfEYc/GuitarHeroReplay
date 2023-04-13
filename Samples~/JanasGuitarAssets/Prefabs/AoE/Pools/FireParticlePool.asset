@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a7a77c2d2712b747979417e0e152497, type: 3}
+  m_Name: FireParticlePool
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 5349559892651688118, guid: 3a4a951b28e5d844393a09e57ee66397, type: 3}

@@ -7,7 +7,7 @@ namespace GuitarHero
     [RequireComponent(typeof(AudioSource))]
     public class GuitarRecorder : MonoBehaviour
     {
-        [SerializeField] GuitarReplay replaySave;
+        [SerializeField] GuitarPlayer player;
         [SerializeField] InputAction[] guitarInputs;
         [SerializeField] InputAction recordInput;
         
@@ -30,7 +30,7 @@ namespace GuitarHero
             recordInput.performed += _ => RecordToggle();
             recordInput.Enable();
             _audioSource = GetComponent<AudioSource>();
-            _audioSource.clip = replaySave.song;
+            _audioSource.clip = player.replay.song;
         }
 
         void RecordToggle()
@@ -68,7 +68,7 @@ namespace GuitarHero
         {
             for (int i = 0; i < guitarStrings.Length; i++)
             {
-                replaySave.SaveImpacts(i, guitarStrings[i].recordedImpacts);
+                player.replay.SaveImpacts(i, guitarStrings[i].recordedImpacts);
             }
         }
     }
